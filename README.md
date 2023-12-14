@@ -14,14 +14,20 @@ This Python project involves processing images within a provided ZIP file contai
 ## Installation
 1. Clone the repository:
     ```
-    git clone https://github.com/Talhamuhammadali/Image-Processing-from-zipfile.git
+       gh repo clone Talhamuhammadali/Image-Processing-from-zipfile
     ``` 
 2. Setup Virtual Envirnoment:
-       ``` python3 -m venv myenv ```
+       ```
+    python3 -m venv myenv
+   ```
        ON Windows:
-           ```myenv\Scripts\activate```
+           ```
+               myenv\Scripts\activate
+           ```
        ON Linux:
-           ```source myenv/bin/activate```
+           ```
+               source myenv/bin/activate
+           ```
 4. Install dependencies:
     ```
     pip install -r requirements.txt
