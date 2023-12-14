@@ -19,7 +19,7 @@ This Python project involves processing images within a provided ZIP file contai
 2. Setup Virtual Envirnoment:
        ```
     python3 -m venv myenv
-   ```
+       ```
        ON Windows:
            ```
                myenv\Scripts\activate
