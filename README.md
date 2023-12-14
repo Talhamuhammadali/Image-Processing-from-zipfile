@@ -1,7 +1,7 @@
 # Image Processing from ZIP File
 
 ## Description
-This Python project involves processing images within a provided ZIP file containing newspaper images. The task is to search through these images for occurrences of names and faces. The script will utilize various libraries to perform tasks such as face detection, optical character recognition (OCR), and image composition to create contact sheets.
+This Python project involves processing images within a provided ZIP file containing newspaper images. The task is to search through these images for occurrences of names and faces. The script will utilize various libraries to perform tasks such as face detection, optical character recognition (OCR), and image composition to create contact sheets. This was done to complete Courseas Python3 Specilization.
 
 ## Requirements
 - Python
