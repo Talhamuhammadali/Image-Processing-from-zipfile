@@ -54,5 +54,7 @@ A zip file is included in the files folder. Use script to find 'Christopher' by 
 ```
 The processing takes ~15-20m for me.
 The results are saved in the main folder. the result for this case is:
+![image](https://github.com/Talhamuhammadali/Image-Processing-from-zipfile/assets/46277852/733db39f-11d9-405c-ab31-0024dbcdc4e7)
+
 
 
