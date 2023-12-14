@@ -14,7 +14,8 @@ This Python project involves processing images within a provided ZIP file contai
 ## Installation
 1. Clone the repository:
     ```
-    git clone https://github.com/your_username/project_name.git
+    git clone https://github.com/Talhamuhammadali/Image-Processing-from-zipfile
+.git
     ```
 2. Install dependencies:
     ```
