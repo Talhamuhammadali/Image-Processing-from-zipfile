@@ -5,9 +5,11 @@ This Python project involves processing images within a provided ZIP file contai
 
 ## Requirements
 - Python
-- [Library Name 1](link_to_library1): Description of its use
-- [Library Name 2](link_to_library2): Description of its use
-- ...
+- [zipfile](https://docs.python.org/3/library/zipfile.html): Python's built-in library for working with ZIP files. Used to extract images from the provided ZIP file.
+- [PIL](https://pillow.readthedocs.io/en/stable/): Python Imaging Library. Utilized for image processing tasks such as image opening, manipulation, and contact sheet creation.
+- [pytesseract](https://github.com/madmaze/pytesseract): Python wrapper for Google's Tesseract OCR engine. Enables optical character recognition to search for keywords within images.
+- [OpenCV (cv2)](https://opencv.org/): Open Source Computer Vision Library. Used for face detection within images and other computer vision tasks.
+
 
 ## Installation
 1. Clone the repository:
