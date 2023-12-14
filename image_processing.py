@@ -9,10 +9,10 @@ from PIL import Image,ImageDraw
 face_cascade = cv.CascadeClassifier('myenv/lib/python3.10/site-packages/cv2/data/haarcascade_frontalface_default.xml')
 
 class ImageProccessing:
-    def __init__(self, path, keyword) -> None:
+    def __init__(self, path, name) -> None:
         self.data = {}
         self.path = path
-        self.keyword = keyword
+        self.keyword = name
 
     def load_data(self):
         """
@@ -81,14 +81,15 @@ class ImageProccessing:
 
 
 if __name__ == "__main__":
-    # parser = argparse.ArgumentParser(description='Search for a name in images within a ZIP file')
-    # parser.add_argument('zip_file', help='Path to the ZIP file containing images')
-    # parser.add_argument('--name', help='name to search for in the images', required=True)
-    # # example search 'Christopher' path 'files/project'
-    # args = parser.parse_args()
+    parser = argparse.ArgumentParser(description='Search for a name in images within a ZIP file')
+    parser.add_argument('zip_file', help='Path to the ZIP file containing images')
+    parser.add_argument('--name', help='name to search for in the images', required=True)
+    # example search 'Christopher' path 'files/project'
+    args = parser.parse_args()
+    print("Starting Process")
     proccessor = ImageProccessing(
-        path='files/project.zip',
-        keyword='Christopher'
+        path=args.zip_file,
+        name=args.name
     )
     proccessor.load_data()
     proccessor.search()
