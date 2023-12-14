@@ -56,5 +56,9 @@ The processing takes ~15-20m for me.
 The results are saved in the main folder. the result for this case is:
 ![image](https://github.com/Talhamuhammadali/Image-Processing-from-zipfile/assets/46277852/733db39f-11d9-405c-ab31-0024dbcdc4e7)
 
+Try the following example:
+```
+    python image_processing.py files/project.zip --name "Mark"
+```
 
 
