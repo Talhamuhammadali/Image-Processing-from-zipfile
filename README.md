@@ -1,7 +1,7 @@
 # Image Processing from ZIP File
 
 ## Description
-This Python project involves processing images within a provided ZIP file containing newspaper images. The task is to search through these images for occurrences of keywords and faces. The script will utilize various libraries to perform tasks such as face detection, optical character recognition (OCR), and image composition to create contact sheets.
+This Python project involves processing images within a provided ZIP file containing newspaper images. The task is to search through these images for occurrences of names and faces. The script will utilize various libraries to perform tasks such as face detection, optical character recognition (OCR), and image composition to create contact sheets.
 
 ## Requirements
 - Python
@@ -35,12 +35,12 @@ This Python project involves processing images within a provided ZIP file contai
     
    
 ## Usage
-1. Place the ZIP file containing newspaper images in the designated folder.
+1. Place the ZIP file containing newspaper images in the files folder.
 2. Run the script `image_processing.py`.
     ```
-    python image_processing.py --keyword "pizza"
+    python image_processing.py --name "anyname"
     ```
-   Replace `"pizza"` with the desired keyword to search for.
+   Replace `"anyname"` with the desired name to search for.
 
 ## Features
 - **Face Detection:** Utilizes OpenCV for detecting faces within images.
@@ -48,5 +48,11 @@ This Python project involves processing images within a provided ZIP file contai
 - **Contact Sheet Generation:** Uses PIL to composite images with detected faces into contact sheets.
 
 ## Example
-Include an example or screenshot demonstrating how to run the script and what the output looks like.
+A zip file is included in the files folder. Use script to find 'Christopher' by using:
+```
+    python image_processing.py files/project.zip --name "Christopher"
+```
+The processing takes ~15-20m for me.
+The results are saved in the main folder. the result for this case is:
+
 
