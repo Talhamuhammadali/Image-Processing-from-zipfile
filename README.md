@@ -14,13 +14,19 @@ This Python project involves processing images within a provided ZIP file contai
 ## Installation
 1. Clone the repository:
     ```
-    git clone https://github.com/Talhamuhammadali/Image-Processing-from-zipfile
-.git
-    ```
-2. Install dependencies:
+    git clone https://github.com/Talhamuhammadali/Image-Processing-from-zipfile.git
+    ``` 
+2. Setup Virtual Envirnoment:
+       ``` python3 -m venv myenv ```
+       ON Windows:
+           ```myenv\Scripts\activate```
+       ON Linux:
+           ```source myenv/bin/activate```
+4. Install dependencies:
     ```
     pip install -r requirements.txt
     ```
+    
    
 ## Usage
 1. Place the ZIP file containing newspaper images in the designated folder.
@@ -38,8 +44,3 @@ This Python project involves processing images within a provided ZIP file contai
 ## Example
 Include an example or screenshot demonstrating how to run the script and what the output looks like.
 
-## Contributors
-- [Your Name](link_to_profile): Role in the project
-
-## License
-This project is licensed under the [License Name](link_to_license).
