@@ -4,7 +4,7 @@ import argparse
 import pytesseract
 import cv2 as cv
 import numpy as np
-from PIL import Image,ImageDraw
+from PIL import Image,ImageDraw, ImageShow
 # loading the face detection classifier
 face_cascade = cv.CascadeClassifier('myenv/lib/python3.10/site-packages/cv2/data/haarcascade_frontalface_default.xml')
 
@@ -39,6 +39,14 @@ class ImageProccessing:
         return self.data
 
     def search(self):
+        """
+        The search function takes a keyword and searches the data dictionary for that keyword.
+        If it finds the keyword, it will print out which file(s) contain that word in their text.
+        It will also display all of the faces found in those files.
+        
+        :param self: Refer to the instance of the class
+        :return: saves sheets of faces
+        """
         #pasted crops dimension
         pw = 120
         ph = 120
@@ -75,6 +83,15 @@ class ImageProccessing:
         return 0
     
     def show_sheet(self, sheet):
+        """
+        The show_sheet function takes a sheet of music as an argument and displays it.
+        
+        
+        :param self: Allow an instance of the class to access the attributes and methods of that class
+        :param sheet: Display the sheet
+        :return: A plot of the sheet
+        :doc-author: Trelent
+        """
         plt.imshow(sheet)
         plt.axis('off')
         plt.show()
